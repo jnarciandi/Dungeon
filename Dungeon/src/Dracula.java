@@ -7,8 +7,8 @@ public class Dracula extends Character{
 	public Dracula(int fila, int columna) {
 		super(fila,columna);
 		this.form = ("D");
-		this.fila = filamax;
-		this.columna = columnamax;
+		this.fila = filamax-1;
+		this.columna = columnamax-1;
 	}
 	
 	
@@ -22,6 +22,7 @@ public class Dracula extends Character{
 	}
 
 
+	
 	public String getForm() {
 		return form;
 	}
@@ -54,4 +55,7 @@ public class Dracula extends Character{
 	public String toString() {
 		return ("D " + this.columna + " " + this.fila);
 	}
+
+
+	
 }

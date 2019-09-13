@@ -9,19 +9,21 @@ public class Vampire extends Character {
 	public Vampire(int fila, int columna) {
 		super(fila,columna);
 		this.form = ("v");
-		this.fila = random.nextInt(filamax)+1;
-		this.columna = random.nextInt(columnamax)+1;
+		this.fila = random.nextInt(filamax);
+		this.columna = random.nextInt(columnamax);
 	}
 	
 	
 	public void move() {
 		int direction = random.nextInt(2)+1;
 		if (direction == 1) {
-			this.fila = random.nextInt(filamax)+1;
+			this.fila = random.nextInt(filamax);
 		}else if (direction == 2) {
-			this.columna = random.nextInt(columnamax)+1;
+			this.columna = random.nextInt(columnamax);
 		}
 	}
+	
+
 
 
 	public String getForm() {

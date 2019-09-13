@@ -2,20 +2,20 @@ import java.util.ArrayList;
 
 public class Map {
 	private ArrayList<String> board;
-	private ArrayList<String> cleanBoard;
+	private int filas;
+	private int columnas;
+
 	
 	
 	public Map(int x, int y) {
-		this.cleanBoard = new ArrayList<String>();
-		for (int i=0;i<y;i++) {
-			this.cleanBoard.add(linea(x));
-		}
+		this.filas = x;
+		this.columnas = y;
 		this.board = new ArrayList<String>();
-		this.board
+		for (int i=0;i<y;i++) {
+			this.board.add(linea(x));
+		}		
 	}
-	
-	
-	
+		
 	public String linea(int tam) {
 		String line = ("");		
 		for(int i=0;i<tam;i++) {
@@ -29,10 +29,13 @@ public class Map {
 			System.out.println(i);
 		}
 	}
-
 	
-	
-	
+	public void resetMap() {
+		this.board = new ArrayList<String>();
+		for (int i=0;i<this.filas;i++) {
+			this.board.add(linea(this.columnas));
+		}
+	}
 	
 	//getters and setters
 
@@ -46,28 +49,9 @@ public class Map {
 		this.board = board;
 	}
 
-
-
-	public ArrayList<String> getCleanBoard() {
-		return cleanBoard;
-	}
-
-
-
-	public void setCleanBoard(ArrayList<String> cleanBoard) {
-		this.cleanBoard = cleanBoard;
-	}
-
-
-
 	@Override
 	public String toString() {
-		return "Map [board=" + board + ", cleanBoard=" + cleanBoard + "]";
+		return "Map [board=" + board + "]";
 	}
 	
-	
-	
-	
-	
-
 }

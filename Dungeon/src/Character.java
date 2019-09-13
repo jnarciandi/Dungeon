@@ -18,7 +18,8 @@ public abstract class Character {
 	public abstract int getFila();
 	public abstract int getColumna();
 	public abstract String getForm();
-		
+
+
 
 
 	public int getFilamax() {
