@@ -13,8 +13,6 @@ public class Utiles {
 				player.setFila(player.getFila() -1);
 			}else if(movs.charAt(i) == 's' && player.getFila() < player.getFilamax() -1) {
 				player.setFila(player.getFila() +1);
-			}else {
-				System.out.println("ette aqui");
 			}
 			i++;
 		}
@@ -43,7 +41,6 @@ public class Utiles {
 			comp =false;
 			}
 		}
-		System.out.println("despues de 0");
 	}
 	
 	public static void gameOver() {
