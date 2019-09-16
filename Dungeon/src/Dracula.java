@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Dracula extends Character{
 	private String form;
@@ -12,7 +13,7 @@ public class Dracula extends Character{
 	}
 	
 	
-	public void move() {
+	public void move(ArrayList<Character> chars) {
 		int direction = random.nextInt(2)+1;
 		if (direction == 1) {
 			this.fila = random.nextInt(filamax);

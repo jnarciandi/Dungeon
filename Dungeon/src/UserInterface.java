@@ -48,7 +48,7 @@ public class UserInterface {
 			Utiles.killVampire(this.chars, pla);
 			
 			for(Character a: chars) {
-				a.move();
+				a.move(chars);
 			}
 			Utiles.killVampire(this.chars, pla);
 			if(this.chars.size() == 2) {

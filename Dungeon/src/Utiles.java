@@ -13,6 +13,8 @@ public class Utiles {
 				player.setFila(player.getFila() -1);
 			}else if(movs.charAt(i) == 's' && player.getFila() < player.getFilamax() -1) {
 				player.setFila(player.getFila() +1);
+			}else {
+				System.out.println("ette aqui");
 			}
 			i++;
 		}
@@ -24,7 +26,7 @@ public class Utiles {
 		while (comp) {
 		int count = 0;
 		int test =0;
-		for(Character a: chars) {
+		for(Character a: chars) {			
 			if(a.getColumna() == pla.getColumna() && a.getFila() == pla.getFila() && a.getForm().contentEquals("v")) {
 				test = count;
 			}else if(a.getColumna() == pla.getColumna() && a.getFila() == pla.getFila() && a.getForm().contentEquals("D")) {
@@ -41,6 +43,7 @@ public class Utiles {
 			comp =false;
 			}
 		}
+		System.out.println("despues de 0");
 	}
 	
 	public static void gameOver() {

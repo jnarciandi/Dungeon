@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Random;
 
 public abstract class Character {
@@ -14,7 +15,7 @@ public abstract class Character {
 	}
 	
 	
-	public abstract void move();
+	public abstract void move(ArrayList<Character> chars);
 	public abstract int getFila();
 	public abstract int getColumna();
 	public abstract String getForm();

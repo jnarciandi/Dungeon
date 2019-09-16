@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Player extends Character{
 	private String form;
@@ -14,7 +15,7 @@ public class Player extends Character{
 	
 
 	
-	public void move() {
+	public void move(ArrayList<Character> chars) {
 		
 	}
 
